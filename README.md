@@ -36,7 +36,7 @@ Follow these instructions to get a copy of the project up and running on your lo
 
 1. **Clone the repository:**
 
-        git clone [https://github.com/s0uru/whattowatch.git](https://github.com/s0uru/whattowatch.git)
+        git clone https://github.com/s0uru/whattowatch.git
         cd whattowatch
 
 2. **Install dependencies:**
