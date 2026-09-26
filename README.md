@@ -35,6 +35,37 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Installation
 
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/s0uru/whattowatch.git](https://github.com/s0uru/whattowatch.git)
-   cd whattowatch
+
+        git clone [https://github.com/s0uru/whattowatch.git](https://github.com/s0uru/whattowatch.git)
+        cd whattowatch
+
+2. **Install dependencies:**
+
+        npm install
+
+3. **Environment Setup:**
+   Create a `.env` file in the root directory of your project and add your TMDB API key:
+
+        VITE_TMDB_API_KEY=your_tmdb_api_key_here
+
+4. **Run the development server:**
+
+        npm run dev
+
+5. **Open the application:**
+   Open your browser and navigate to `http://localhost:5173`.
+
+## 📁 Project Structure
+
+    src/
+    ├── components/    # Reusable React components (UI elements)
+    ├── pages/         # Application pages (Home, Movie Details, etc.)
+    ├── services/      # API configurations and Axios requests
+    ├── types/         # TypeScript interfaces and type definitions
+    ├── App.tsx        # Main routing and layout
+    └── main.tsx       # Application entry point
+
+## 👤 Author
+
+**Jakub Pietrusiak**
+* GitHub: [@s0uru](https://github.com/s0uru)
