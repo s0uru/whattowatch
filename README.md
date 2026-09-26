@@ -1,75 +1,40 @@
-# React + TypeScript + Vite
+# WhatToWatch 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance movie discovery and recommendation web application built with React and TypeScript. Powered by The Movie Database (TMDB) API, this app allows users to seamlessly browse trending movies, search for specific titles, and filter results by genres and ratings.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Trending Movies:** Discover what's currently popular in the cinematic world.
+* **Advanced Search & Filtering:** 
+  * Search movies by title.
+  * Filter by specific genres (Action, Comedy, Sci-Fi, etc.).
+  * Filter by minimum user rating (e.g., ⭐ 7.0+).
+* **Infinite Scrolling:** Smoothly fetch and append new movies using the "Load More" functionality.
+* **Movie Details:** Dedicated pages for each movie featuring high-quality backdrops, posters, runtime, overviews, and personalized recommendations ("More Like This").
+* **Responsive Design:** Fully responsive, cinematic dark-themed UI built with Tailwind CSS that looks great on mobile, tablet, and desktop devices.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Frontend:** React, TypeScript
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS (v4)
+* **Routing:** React Router v6
+* **Data Fetching:** Axios
+* **Icons:** Lucide React
+* **API:** [TMDB API](https://developer.themoviedb.org/docs)
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* [Node.js](https://nodejs.org/) installed on your machine.
+* A free API key from [The Movie Database (TMDB)](https://www.themoviedb.org/documentation/api).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
 
-```
-
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/s0uru/whattowatch.git](https://github.com/s0uru/whattowatch.git)
+   cd whattowatch
